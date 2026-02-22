@@ -56,7 +56,7 @@ export default function ChatBoxComponent(props:chatBox){
         props.setRoom(false);
     }
     useEffect(function(){
-      const ws = new WebSocket(BACKEND_URL);
+      const ws = new WebSocket(`${BACKEND_URL}/ws`);
       setSocket(ws);
     //   ws.onerror = () => {
   
